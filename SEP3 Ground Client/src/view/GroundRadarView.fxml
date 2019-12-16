@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<Pane fx:id="mainPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1550.0" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.GroundRadarView">
+   <children>
+      <ImageView fitHeight="831.0" fitWidth="1623.0" layoutX="-4.0" layoutY="-28.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../images/Layout.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="flagImage" fitHeight="150.0" fitWidth="200.0" layoutX="643.0" layoutY="260.0" pickOnBounds="true" preserveRatio="true" />
+      <Pane fx:id="failPane" layoutX="70.0" layoutY="287.0" opacity="0.91" prefHeight="200.0" prefWidth="1415.0" style="-fx-background-color: #002f5f; -fx-background-radius: 20;">
+         <children>
+            <Text fill="WHITE" layoutX="327.0" layoutY="135.0" strokeType="OUTSIDE" strokeWidth="0.0" text="SIMULATION FAILED" textAlignment="CENTER">
+               <font>
+                  <Font size="96.0" />
+               </font>
+            </Text>
+         </children>
+      </Pane>
+      <TableView fx:id="planeListTable" layoutX="468.0" layoutY="530.0" prefHeight="200.0" prefWidth="401.0">
+        <columns>
+          <TableColumn fx:id="callSignColumn" prefWidth="83.19992065429688" text="RegNo." />
+            <TableColumn fx:id="statusColumn" prefWidth="138.4000244140625" text="Status" />
+            <TableColumn fx:id="targetColumn" prefWidth="177.800048828125" text="Target" />
+        </columns>
+      </TableView>
+      <Pane layoutX="678.0" layoutY="14.0" prefHeight="46.0" prefWidth="200.0" style="-fx-background-color: #002f5f; -fx-background-radius: 50;">
+         <children>
+            <Label fx:id="timerLabel" alignment="CENTER" layoutX="45.5" text="22:30:59" textFill="WHITE">
+               <font>
+                  <Font size="31.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <Pane layoutX="1161.0" layoutY="579.0" prefHeight="24.0" prefWidth="74.0" style="-fx-background-color: white;">
+         <children>
+            <Label layoutX="17.0" layoutY="4.0" text="GATE D" textFill="#002f5f">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <Pane layoutX="1198.0" layoutY="630.0" prefHeight="24.0" prefWidth="74.0" style="-fx-background-color: white;">
+         <children>
+            <Label layoutX="17.0" layoutY="4.0" text="GATE C" textFill="#002f5f">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <Pane layoutX="1220.0" layoutY="691.0" prefHeight="24.0" prefWidth="74.0" style="-fx-background-color: white;">
+         <children>
+            <Label layoutX="17.0" layoutY="4.0" text="GATE B" textFill="#002f5f">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <Pane layoutX="1227.0" layoutY="749.0" prefHeight="24.0" prefWidth="74.0" style="-fx-background-color: white;">
+         <children>
+            <Label layoutX="17.0" layoutY="4.0" text="GATE A" textFill="#002f5f">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+   </children>
+</Pane>
